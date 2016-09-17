@@ -8,10 +8,26 @@
 #### Hva er det som trenger versjonskontroll?
 + Kode
 + Tekstfiler
-#### Hva er versjonskontroll?
+#### Hva er git?
 + Lager av alle gamle versjoner
 + Et sentral lager med koden, lokal kopi du kan jobbe på
-#### Basic versjonskontroll
+***
+### Installer git
+##### Linux
+```
+sudo yum install git-all
+```
+```
+sudo apt-get install git-all
+```
+##### MacOS
+```
+git
+```
+##### Windows
+[Git-scm.com]( http://git-scm.com/download/win)
+***
+### Basic versjonskontroll
 ```
 git pull 
 ```
@@ -63,29 +79,31 @@ git merge [gren]
 ***
 
 ## Verktøy
-* Versjonskontrollsystem
+#### Versjonskontrollsystem
 + [Git](https://git-scm.com/downloads)
 + [Mercurial](https://www.mercurial-scm.org/wiki/Download)
 + [SVN](https://subversion.apache.org/download.cgi)
 + [CVS](http://www.nongnu.org/cvs/)
 
-* Online repositories
+#### Online repositories
 + [Github](https://github.com)
 + [Bitbucket](https://bitbucket.com)
 
-* GUI program
+#### GUI program
 + [TortoiseGit/HG](https://tortoisegit.org)
 + [SourceTree](https://www.sourcetreeapp.com)
 
-## Tankegang
-### Basic Versjonskontroll
+***
+
+## Workflow
+#### Basic Versjonskontroll
 En rett linje med historie. Bare en branch, alt til master. Greit nok for en person. CVS/SVN er mer enn nok.
 
-### Basic Git workflow
+#### Basic Git workflow
 En master branch. Feature branches for utvikling. Mergeing skjer inn i master
 når en feature er stabil. Merging skjer i branchen hvor det utvikles.
 
-### Produksjons Git workflow
+#### Produksjons Git workflow
 Master er prod. Development skal til prod. Feature branches for hver feature. 
 Ny branch fra feature for hver utviklingsoppgave. Merge skjer alltid ut til
 branch det er gjort utvikling i. Pull request mot development. Kan trigge
