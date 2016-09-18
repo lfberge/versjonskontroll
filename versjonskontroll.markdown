@@ -10,6 +10,8 @@
 + Tekstfiler
 #### Hva er git?
 + Lager av alle gamle versjoner
++ Eksternt repository på en server
++ Kan være lokalt eller hos en ekstern hosting
 + Et sentral lager med koden, lokal kopi du kan jobbe på
 ***
 
