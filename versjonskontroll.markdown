@@ -12,22 +12,22 @@
 + Lager av alle gamle versjoner
 + Et sentral lager med koden, lokal kopi du kan jobbe på
 ***
-### Installer git
-##### Linux
-```
-sudo yum install git-all
-```
-```
-sudo apt-get install git-all
-```
-##### MacOS
-```
-git
-```
-##### Windows
-[Git-scm.com]( http://git-scm.com/download/win)
-***
+
 ### Basic versjonskontroll
+The name "git" was given by Linus Torvalds when he wrote the very
+first version. He described the tool as "the stupid content tracker"
+and the name as (depending on your mood):
+
+ - random three-letter combination that is pronounceable, and not
+   actually used by any common UNIX command.  The fact that it is a
+   mispronunciation of "get" may or may not be relevant.
+ - stupid. contemptible and despicable. simple. Take your pick from the
+   dictionary of slang.
+ - "global information tracker": you're in a good mood, and it actually
+   works for you. Angels sing, and a light suddenly fills the room.
+ - "goddamn idiotic truckload of sh*t": when it breaks
+
+
 ```
 git pull 
 ```
@@ -39,6 +39,7 @@ git push <REMOTENAME> <BRANCHNAME>
 ```
 + Sender dine endringer til serveren
 + Du må ha de siste endringene fra serveren for å få lov til å pushe
+ 
 --- 
 ```
 git commit -m "beskrivende tekst om committen"
@@ -53,6 +54,7 @@ git add [file]
 ```
 + For å legge til en fil i versjonskontroll brukes Add
 + For å fjerne en fil i versjonskontroll brukes Remove
+ 
 ---
 ```
 git branch [navn-på-ny-gren]
@@ -64,6 +66,7 @@ git checkout [navn-på-gren]
 + Gjør det lettere å samarbeide
 + Gjør det lettere å holde kontroll på historien
 + Kan holde en gren fungerende under utvikling av nye funksjoner
+ 
 ---
 ```
 git merge [gren]
@@ -108,3 +111,20 @@ Master er prod. Development skal til prod. Feature branches for hver feature.
 Ny branch fra feature for hver utviklingsoppgave. Merge skjer alltid ut til
 branch det er gjort utvikling i. Pull request mot development. Kan trigge
 automagiske tester eller manuell godkjenning for å sjekkes inn i development.
+
+
+### Installer git
+##### Linux
+```
+sudo yum install git-all
+```
+```
+sudo apt-get install git-all
+```
+##### MacOS
+```
+git
+```
+##### Windows
+[Git-scm.com]( http://git-scm.com/download/win)
+***
