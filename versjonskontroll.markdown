@@ -1,4 +1,11 @@
 # Versjonskontroll
+Intro til versjonskontroll
+Har du kontroll på koden din? På innleveringer? På bacheloroppgaven?
+I dette kurset får du en intro til prinsippene og bruken av versjonskontrollsystemet Git. 
+Kurset gir også intro til ulike verktøy som gjør versjonskontroll enklere og kraftigere.
+Etter å ha vært på dette kurset kan du mer om hvordan versjonskontroll bør gjøres og du er klar for å lage ditt første repository.
+
+
 #### Hvorfor trenger vi versjonskontroll?
  + Lagre alle gamle versjoner, så man kan gå tilbake til en gammel versjon om noe blir ødelagt
  + Har det dukket opp en feil, når kom den?
